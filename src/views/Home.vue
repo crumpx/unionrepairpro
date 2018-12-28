@@ -1,18 +1,156 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <v-responsive>
+      <img style="width: 100%;" src="@/assets/home.jpg" alt="">
+      </v-responsive> 
+    <v-container class="my-5">
+      <v-layout row >
+        <v-flex xs12>
+          <h1 class="my-3 text-xs-center">Welcome to Union Repair Pro</h1>
+           
+          <p>We are located in Kissimmee, Florida to provide a wide range of service such as phone repair and computer repair for home and business around the area. </p>
+          <p>In our store, our well-trained technicians can fix nearly any problem you might have with your phones, computer, and other electronics. Take our iPhone repair for example, normally in as fast as 20 minutes. Not only that, our friendly and reliable service comes at a price of about half of what our big box competitors charge will charge you.</p> 
+          <p>We do not believe saving a few dollars on cheap, unreliable replacement parts will make our business grow bigger and faster. Our replacement parts are shipped directly from the manufactory and are the highest quality.</p>
+          <p>With the confidence with our service and product, we offer a lifetime warranty on our replacement parts (labor not included), which will protect you from the manufactory defects.</p>
+        </v-flex>
+      </v-layout>
+
+      
+      <h1 class="my-3 text-xs-center">Service We Offer</h1>
+      <v-layout row wrap expend>
+        <v-flex xs12 sm6 md4 lg3 grow v-for="item in services" :key="item.title">
+          <v-card flat class="text-xs-center ma-3">
+            <v-responsive class="pt-4">
+              <v-avatar size="120" class="grey">
+                <img :src="item.src" alt="">
+              </v-avatar>
+            </v-responsive>
+            <v-card-text>
+              <div class="subheading">{{item.title}}</div>
+              <div class="grey--text">{{item.text}}</div>
+            </v-card-text>
+            <v-card-actions>
+              <v-btn flat color='blue'  router :to='item.actionUrl'>
+                <v-icon small left>fa-check</v-icon>
+                Find out More
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+          
+        </v-flex>
+      </v-layout>
+
+
+      <h1 class="my-3 text-xs-center">How to Find Us</h1>
+      <v-layout row wrap align-center >
+
+<v-flex xs12 lg6 pa-4>
+          <v-card class="text-xs-center" >
+            <v-card-title>              
+              <v-flex xs12 >
+                <div class="display-2 text-uppercase  grey--text" >
+                <span class="font-weight-light">Union Repair </span>
+                <span class="font-weight-medium black--text">Pro</span>
+                </div>
+                <h3 class="subheading grey--text">Phone, Computer Electronics Repair</h3>
+                <v-divider class="my-3"></v-divider> 
+                <h3  class="my-3 subheading">3147 W Vine Street, Kissimmee, FL 24741.</h3>
+                <h3>We can be reached through:</h3>     
+              </v-flex>     
+            </v-card-title>
+            <v-card-actions >                            
+                <v-btn flat color='grey darken-4' href="tel:4072014886">
+                  <v-icon left >fa-phone</v-icon>
+                  <span>Phone Call</span>
+                </v-btn>
+                <v-btn flat color='grey darken-4' href="mailto:info@unionrepairpro.com">
+                  <v-icon left >fa-envelope</v-icon>
+                  <span>Email</span>
+                </v-btn>
+            </v-card-actions>
+
+     
+          </v-card>
+          
+        </v-flex>
+
+
+
+
+        <v-flex xs12 lg6 pa-4>
+
+          <Map></Map>
+        </v-flex>
+
+        
+        
+      </v-layout>
+    </v-container>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Map from '@/components/Map'
 
-export default {
-  name: 'home',
-  components: {
-    HelloWorld
+  export default {
+          components: {
+            Map
+          },
+    metaInfo: {
+      title: 'Android, iPhone, Computer Repair in Kissimmee',
+      meta: [
+      { charset: 'utf-8' },
+      { name: 'description', content: 'Phone and computer repair in Kissimmee, Fix Broken iPhone Screen in 20 minutes. Micro soldering service, Data recovery and more.' },
+      { name: 'author', content: 'Gang Zhao, Union Repair Pro'},
+    ]
+
+    },
+
+    data() {
+      return {
+          services: [
+                {
+                    src: require('@/assets/cracked-phone-sm.jpg'),
+                    title: 'Phone Repair',
+                    text: 'Apple, Samsung, LG, or any other brands, with any problems.',
+                    actionUrl: '/service/phone-tablet'
+                },
+                {
+                    src: require('@/assets/computer-repair-sm.jpg'),
+                    title: 'Computer Service',
+                    text: 'Desktop, Laptop, Windows or Mac. We fixed them all.',
+                    actionUrl: '/service/computer'
+                },
+                {
+                    src: require('@/assets/microsoldering-sm.jpg'),
+                    title: 'Microsoldering',
+                    text: 'Fix phones with internal issues that can\'t be fixed by anyone else.',
+                    actionUrl: '/service/microsoldering'
+                },
+                {
+                    src: require('@/assets/phone-unlock-chain-sm.jpg'),
+                    title: 'Phone Unlock',
+                    text: 'Password lock, Google lock, Carrier lock, no problem.',
+                    actionUrl: '/service/unlock'
+                },
+
+                {
+                    src: require('@/assets/data-recovery-sm.jpg'),
+                    title: 'Data Recovery',
+                    text: 'Recover data from dead computers and phones',
+                    actionUrl: '/service/unlock'
+                },
+
+                {
+                    src: require('@/assets/buyandsell-sm.png'),
+                    title: 'Buy & Sell',
+                    text: 'You have phone you want to get rid off for cash? We can help.',
+                    actionUrl: '/buyandsell'
+                },                
+            ]
+      }
+    }
+
+  
   }
-}
 </script>
