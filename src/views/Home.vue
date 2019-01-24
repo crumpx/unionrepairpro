@@ -97,7 +97,7 @@ import Map from '@/components/Map'
             Map
           },
     metaInfo: {
-      title: 'Android, iPhone, Computer Repair in Kissimmee',
+      title: 'Apple, Android, Phone Repair Near Me, Computer, Laptop Repair',
       meta: [
       { charset: 'utf-8' },
       { name: 'description', content: 'Phone and computer repair in Kissimmee, Fix Broken iPhone Screen in 20 minutes. Micro soldering service, Data recovery and more.' },
