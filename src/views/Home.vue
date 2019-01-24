@@ -7,11 +7,12 @@
       <v-layout row >
         <v-flex xs12>
           <h1 class="my-3 text-xs-center">Welcome to Union Repair Pro</h1>
-           
-          <p>We are located in Kissimmee, Florida to provide a wide range of service such as phone repair and computer repair for home and business around the area. </p>
+          <h3 class="my-3 text-xs-center">Repair experts in Kissimmee, FL</h3>
+          <p style='display: inline;'>We are located in Kissimmee, Florida to provide a wide range of service such as <h3 style="display: inline;">phone repair</h3>, <h3 style="display: inline; ">laptop repair</h3>, <h3 style="display: inline; ">computer service</h3> and <h3 style="display: inline; ">microsoldering service</h3> for home and business around the area. If you are in the neiborhood, just google <h3 style="display: inline;">phone repair near me</h3> and we will come up on the screen.</p>
           <p>In our store, our well-trained technicians can fix nearly any problem you might have with your phones, computer, and other electronics. Take our iPhone repair for example, normally in as fast as 20 minutes. Not only that, our friendly and reliable service comes at a price of about half of what our big box competitors charge will charge you.</p> 
           <p>We do not believe saving a few dollars on cheap, unreliable replacement parts will make our business grow bigger and faster. Our replacement parts are shipped directly from the manufactory and are the highest quality.</p>
           <p>With the confidence with our service and product, we offer a lifetime warranty on our replacement parts (labor not included), which will protect you from the manufactory defects.</p>
+
         </v-flex>
       </v-layout>
 
@@ -100,8 +101,10 @@ import Map from '@/components/Map'
       title: 'Apple, Android, Phone Repair Near Me, Computer, Laptop Repair',
       meta: [
       { charset: 'utf-8' },
-      { name: 'description', content: 'Phone and computer repair in Kissimmee, Fix Broken iPhone Screen in 20 minutes. Micro soldering service, Data recovery and more.' },
+      { name: 'description', content: 'Phone repair and computer repair, laptop repair in Kissimmee, phone repair near me, fix broken phone screen in 20 minutes. Micro soldering service and more' },
       { name: 'author', content: 'Gang Zhao, Union Repair Pro'},
+       { name: 'msvalidate.01', content: '1DF766012DA50373A5C327F8ABDEEE40'},
+
     ]
 
     },
