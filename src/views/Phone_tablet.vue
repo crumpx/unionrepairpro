@@ -2,7 +2,7 @@
   <div class="">
 
              <v-responsive>
-      <img style="width: 100%;" src="@/assets/cracked-phone.jpg" alt="">
+<img style="width: 100%;" v-lazy="banner" alt="">
       </v-responsive> 
           <v-container>
         <v-layout>
@@ -13,7 +13,7 @@
   <v-container>
           <h1 class="text-xs-center display-3">Micro-soldering Service</h1>
           <v-layout xs12  row wrap align-center>
-            <v-flex pa-2 xs12 sm6 v-for="item in questions" :key='item'>
+            <v-flex pa-2 xs12 sm6 v-for="(item, index) in questions" :key='index'>
               <v-card>
                 <v-card-title class="title grey--text">{{item.q}}</v-card-title>
                 <v-card-text v-html='item.a'>
@@ -72,7 +72,8 @@ import MyAddress from '@/components/Address.vue'
               and give feedback to the customer. Please call us now, or come to our store, we will \
               give priority to the mobile phone to avoid damage"
           },
-        ]
+        ],
+         banner: require("@/assets/cracked-phone.jpg")
       }
     }
 

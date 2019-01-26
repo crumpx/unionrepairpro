@@ -8,8 +8,8 @@
     >
       <v-card-text>
         <v-btn
-          v-for="link in socialLinks"
-          :key="link"
+          v-for="(link,index) in socialLinks"
+          :key="index"
           class="mx-3 white--text"
           icon
         >
@@ -36,11 +36,9 @@
   export default {
     data: () => ({
       socialLinks: [
-          { icon: 'fab fa-facebook', url: ''},
-          { icon: 'fab fa-twitter', url: ''},
-          { icon: 'fab fa-google-plus', url: ''},
-          { icon: 'fab fa-linkedin', url: ''},
-          { icon: 'fab fa-instagram', url: ''},         
+          { icon: 'fab fa-facebook', url: 'https://www.facebook.com/unionrepairpro/'},
+          { icon: 'fab fa-twitter', url: 'https://twitter.com/RepairUnion'},
+          { icon: 'fab fa-instagram', url: 'https://www.instagram.com/unionrepairpro/'},         
       ]
     })
   }

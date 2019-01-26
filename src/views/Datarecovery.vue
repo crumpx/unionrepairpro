@@ -1,7 +1,7 @@
 <template>
   <div class="">
              <v-responsive>
-      <img style="width: 100%;" src="@/assets/data-recovery.jpg" alt="">
+ <img style="width: 100%;" v-lazy="banner" alt="">
       </v-responsive> 
           <v-container>
         <v-layout>
@@ -12,7 +12,7 @@
   <v-container>
           <h1 class="text-xs-center display-3">Data Recovery Service</h1>
           <v-layout xs12  row wrap align-center>
-            <v-flex pa-2 xs12 sm6 v-for="item in questions" :key='item'>
+            <v-flex pa-2 xs12 sm6 v-for="(item,index) in questions" :key='index'>
               <v-card>
                 <v-card-title class="title grey--text">{{item.q}}</v-card-title>
                 <v-card-text v-html="item.a">
@@ -60,7 +60,8 @@ import MyAddress from '@/components/Address.vue'
             a: "In general, the price of the data recovery operations we are able to perform is affordable for the customer. But if the customer has very important data, such as a unique copy of the photo of a deceased relative, or very important business data, but unfortunately the media has a physical village, and our existing equipment can not progress. So in this case, we will look for a more advanced lab environment for our customers to carry out more in-depth repairs. Of course, customers have absolute power to decide whether their data is more important than the money they pay."
           },
          
-        ]
+        ],
+         banner: require("@/assets/data-recovery.jpg")
       }
     }
   }

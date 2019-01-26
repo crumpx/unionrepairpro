@@ -1,7 +1,7 @@
 <template>
   <div class="">
-                  <v-responsive>
-      <img style="width: 100%;" src="@/assets/computer-service.jpg" alt="">
+      <v-responsive>
+      <img style="width: 100%;" v-lazy="banner" alt="">
       </v-responsive> 
  <v-container>
         <v-layout>
@@ -12,7 +12,7 @@
       <v-container>
           <h1 class="text-xs-center display-3">Computer Service</h1>
           <v-layout xs12  row wrap align-center>
-            <v-flex pa-2 xs12 sm6 v-for="item in questions" :key='item'>
+            <v-flex pa-2 xs12 sm6 v-for="(item, index) in questions" :key='index'>
               <v-card flat>
                 <v-card-title class="title grey--text">{{item.q}}</v-card-title>
                 <v-card-text v-html="item.a">
@@ -68,7 +68,8 @@ import MyAddress from '@/components/Address.vue'
             to customers, reducing the chances of the same software problems.<br />As for the hardware, we will guarantee the computer we repair according to the warranty time provided by the manufacturer (excluding labor costs)." 
           },
 
-        ]
+        ],
+         banner: require("@/assets/computer-service.jpg")
       }
     }
   }

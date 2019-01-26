@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <v-responsive>
-      <img style="width: 100%;" src="@/assets/microsoldering.jpg" alt="">
+      <img style="width: 100%;" v-lazy="banner" alt="">
       </v-responsive>  
     
     <v-container fluid >
@@ -51,12 +51,6 @@
       </v-layout>
 
 <v-layout row wrap align-center >
-
-
-
-
-
-
         <v-flex xs12>
          <Map></Map>
         </v-flex>
@@ -87,11 +81,12 @@ export default {
     },
     data(){
       return {
-                  markers: [
+            markers: [
             {
               position: {lat:28.30612, lng:-81.43424 }
             }
           ],
+          banner: require("@/assets/microsoldering.jpg")
       }
     }
 }

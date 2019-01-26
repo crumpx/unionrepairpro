@@ -4,6 +4,8 @@ import App from './App.vue'
 import router from './router'
 import * as VueGoogleMaps from 'vue2-google-maps'
 import Meta from 'vue-meta'
+import VueLazyload from 'vue-lazyload'
+
 Vue.config.productionTip = false
 
 Vue.use(VueGoogleMaps, {
@@ -19,8 +21,10 @@ Vue.use(VueGoogleMaps, {
   },
 })
 
-Vue.use(Meta)
 
+
+Vue.use(Meta)
+Vue.use(VueLazyload)
 new Vue({
   router,
   render: h => h(App)

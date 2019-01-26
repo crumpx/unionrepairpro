@@ -1,7 +1,7 @@
 <template>
   <div class="">
         <v-responsive>
-      <img style="width: 100%;" src="@/assets/microsoldering.jpg" alt="">
+      <img style="width: 100%;" v-lazy="banner" alt="">
       </v-responsive>  
       <v-container>
         <v-layout>
@@ -10,7 +10,7 @@
 
           <h1 class="text-xs-center display-3">Micro-soldering Service</h1>
           <v-layout xs12  row wrap align-center>
-            <v-flex pa-2 xs12 sm6 v-for="item in questions" :key='item.q'>
+            <v-flex pa-2 xs12 sm6 v-for="(item,index) in questions" :key='index'>
               <v-card>
                 <v-card-title class="title grey--text">{{item.q}}</v-card-title>
                 <v-card-text v-html="item.a">
@@ -67,7 +67,8 @@ import MyAddress from '@/components/Address.vue'
             audio problem of iPhone 7 Plus are caused by such design flaws. But we will do our best to deal with the problems that may arise in the future."
 
           },
-        ]
+        ],
+         banner: require("@/assets/microsoldering.jpg")
       }
     }
   }
