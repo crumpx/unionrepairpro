@@ -65,17 +65,17 @@
                 <h3 class="subheading grey--text">Phone, Computer Electronics Repair</h3>
                 <v-divider class="my-3"></v-divider> 
                 <h3  class="my-3 subheading">3147 W Vine Street, Kissimmee, FL 24741.</h3>
-                <h3>We can be reached through:</h3>     
+                <h3 style="display: block">We can be reached through:</h3>     
               </v-flex>     
             </v-card-title>
             <v-card-actions >                            
                 <v-btn flat color='grey darken-4' href="tel:4072014886">
                   <v-icon left >fa-phone</v-icon>
-                  <span>Phone Call</span>
+                  <span>407-201-4886</span>
                 </v-btn>
                 <v-btn flat color='grey darken-4' href="mailto:info@unionrepairpro.com">
                   <v-icon left >fa-envelope</v-icon>
-                  <span>Email</span>
+                  <span>info@unionrepairpro.com</span>
                 </v-btn>
             </v-card-actions>
 

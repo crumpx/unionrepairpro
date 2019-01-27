@@ -24,7 +24,7 @@
       <v-divider></v-divider>
 
       <v-card-text class="white--text">
-        &copy;2018 — <strong>Union Repair Pro</strong>
+        &copy;2018 — <strong>Union Repair Pro | 407-201-4886</strong>
       </v-card-text>
     </v-card>
   </v-footer>

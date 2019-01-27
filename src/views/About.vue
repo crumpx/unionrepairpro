@@ -36,7 +36,7 @@
             <v-card-actions >                            
                 <v-btn flat color='grey darken-4' href="tel:4072014886">
                   <v-icon left >fa-phone</v-icon>
-                  <span>Phone Call</span>
+                  <span>407-201-4886</span>
                 </v-btn>
                 <v-btn flat color='grey darken-4' href="mailto:info@unionrepairpro.com">
                   <v-icon left >fa-envelope</v-icon>
