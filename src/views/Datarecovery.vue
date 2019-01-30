@@ -1,7 +1,7 @@
 <template>
   <div class="">
              <v-responsive>
- <img style="width: 100%;" v-lazy="banner" alt="">
+ <img style="width: 100%;" v-lazy="banner" alt="Data Recovery Service">
       </v-responsive> 
           <v-container>
         <v-layout>
@@ -48,7 +48,7 @@ import MyAddress from '@/components/Address.vue'
       return {
         questions: [
           {
-            q: 'What is&nbsp;data recovery service?',
+            q: 'What is data recovery service?',
             a: 'Data recovery is a technical means to recover files deleted by human or computer failure. Data is precious photos, company reports, email jobs and more. If important files are accidentally deleted without backup, the only possible way is to recover the deleted data through our technical means.'
           },
           {

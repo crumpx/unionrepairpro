@@ -1,7 +1,7 @@
 <template>
   <div class="">
       <v-responsive>
-      <img style="width: 100%;" v-lazy="banner" alt="">
+      <img style="width: 100%;" v-lazy="banner" alt="Computer Repair Services, virus removal, data recovery, networking and more...">
       </v-responsive> 
  <v-container>
         <v-layout>
@@ -37,10 +37,10 @@ import MyAddress from '@/components/Address.vue'
     MyAddress
   },
     metaInfo: {
-      title: 'Computer Service',
+      title: 'Computer Service, PC Repair, Virus Removal',
         meta: [
               { charset: 'utf-8' },
-              { name: 'description', content: 'Our computer repair services cover software, hardware, systems and more. From desktop computers to laptops, we offer a full range of services.' },
+              { name: 'description', content: 'Our pc repair, or computer repair services cover software, hardware, systems and more. From desktop computers to laptops, we offer a full range of services. For example, adware and virus removal.' },
               { name: 'author', content: 'Gang Zhao, Union Repair Pro'},
             ]
           },
@@ -50,7 +50,7 @@ import MyAddress from '@/components/Address.vue'
         questions: [
           {
             q: 'What are we offering?',
-            a: "Our computer repair services cover software, hardware, systems and more. From desktop computers to laptops, we offer a full range of services. For example, remove viruses and adware, speed up system operation, replace damaged parts, unlock passwords that customers forget, and more..."
+            a: "Our pc repair, or computer repair services cover software, hardware, systems, virus removal and more. From desktop computers to laptops, we offer a full range of services. For example<h3>General PC Repair</h3><h3>Virus Removal</h3><h3>Speed Up System Operation</h3><h3><a href='/service/datarecovery'>Data Recovery</a></h3><h3>Replace Damage Parts</h3><h3>unlock passwords that customers forget</h3> and more..."
           },
           {
             q: "How long does it take?",
@@ -74,3 +74,9 @@ import MyAddress from '@/components/Address.vue'
     }
   }
 </script>
+
+<style>
+a:link {
+  text-decoration: none;
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
   <div class="">
         <v-responsive>
-      <img style="width: 100%;" v-lazy="banner" alt="">
+      <img style="width: 100%;" v-lazy="banner" alt="Microsoldering Service is highly precious operation done on electronics.">
       </v-responsive>  
       <v-container>
         <v-layout>

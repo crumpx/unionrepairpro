@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <v-responsive>
-      <img style="width: 100%;" v-lazy="banner" alt="">
+      <img style="width: 100%;" v-lazy="banner" alt="Welcome To Union Repair Pro">
       </v-responsive> 
     <v-container class="my-5">
       <v-layout row >
@@ -32,7 +32,7 @@
             <v-responsive class="pt-4">
               <v-avatar size="120" class="grey">
 
-                <img v-lazy="item.src" alt=""> 
+                <img v-lazy="item.src" alt="item.title"> 
               </v-avatar>
             </v-responsive>
             <v-card-text>
@@ -54,35 +54,34 @@
       <h1 class="my-3 text-xs-center">How to Find Us</h1>
       <v-layout row wrap align-center >
 
-<v-flex xs12 lg6 pa-4>
+    <v-flex xs12 lg6 offset-lg3 pa-4>
+      <div itemscope itemtype="http://schema.org/PostalAddress"> 
           <v-card class="text-xs-center" >
             <v-card-title>              
               <v-flex xs12 >
-                <div class="display-2 text-uppercase  grey--text" >
-                <span class="font-weight-light">Union Repair </span>
+                <div class="display-2 text-uppercase  grey--text" itemprop="name" >
+                <span class="font-weight-light" >Union Repair </span>
                 <span class="font-weight-medium black--text">Pro</span>
                 </div>
-                <h3 class="subheading grey--text">Phone, Computer Electronics Repair</h3>
+                <h3 class="subheading grey--text" temprop="contactType">Phone, Computer Electronics Repair</h3>
                 <v-divider class="my-3"></v-divider> 
-                <h3  class="my-3 subheading">3147 W Vine Street, Kissimmee, FL 24741.</h3>
-                <h3 style="display: block">We can be reached through:</h3>     
+                <h3  class="my-3 subheading" itemprop="streetAddress">3147 W Vine Street, <span itemprop="addressLocality">Kissimmee, FL </span>,<span itemprop="postalCode"> 24741. </span></h3>
+                <h3>We can be reached through:</h3>     
               </v-flex>     
             </v-card-title>
             <v-card-actions >                            
-                <v-btn flat color='grey darken-4' href="tel:4072014886">
+                <v-btn flat color='grey darken-4' itemprop="telephone" href="tel:4072014886">
                   <v-icon left >fa-phone</v-icon>
-                  <span>407-201-4886</span>
+                  <span >407-201-4886</span>
                 </v-btn>
-                <v-btn flat color='grey darken-4' href="mailto:info@unionrepairpro.com">
+                <v-btn flat color='grey darken-4' itemprop="email" href="mailto:info@unionrepairpro.com">
                   <v-icon left >fa-envelope</v-icon>
                   <span>info@unionrepairpro.com</span>
                 </v-btn>
             </v-card-actions>
-
-     
           </v-card>
-          
-        </v-flex>
+          </div>
+        </v-flex> 
 
 
 
@@ -107,7 +106,7 @@ import Map from '@/components/Map'
             Map
           },
     metaInfo: {
-      title: 'Apple, Android, Phone Repair Near Me, Computer, Laptop Repair',
+      title: 'Computer|Laptop Repair|Union Repair Pro - Kissimmee, Florida',
       meta: [
       { charset: 'utf-8' },
       { name: 'description', content: 'Phone repair and computer repair, laptop repair in Kissimmee, phone repair near me, fix broken phone screen in 20 minutes. Micro soldering service and more' },

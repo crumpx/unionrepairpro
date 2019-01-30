@@ -2,7 +2,7 @@
   <div class="">
 
              <v-responsive>
-<img style="width: 100%;" v-lazy="banner" alt="">
+<img style="width: 100%;" v-lazy="banner" alt="Phone and Tablet Repair Service, fix nearly any problems.">
       </v-responsive> 
           <v-container>
         <v-layout>
@@ -11,7 +11,7 @@
  </v-container>
 
   <v-container>
-          <h1 class="text-xs-center display-3">Micro-soldering Service</h1>
+          <h1 class="text-xs-center display-3">Phone and Tablet Service</h1>
           <v-layout xs12  row wrap align-center>
             <v-flex pa-2 xs12 sm6 v-for="(item, index) in questions" :key='index'>
               <v-card>
@@ -38,10 +38,10 @@ import MyAddress from '@/components/Address.vue'
     MyAddress
   },
           metaInfo: {
-            title: 'Cellphone and tablet repair',
+            title: 'Cellphone and tablet repair, iPhone Glass Repair',
             meta: [
               { charset: 'utf-8' },
-              { name: 'description', content: 'At Union Repair Pro, Our services range from simple LCD replacement to complex motherboard repairs.' },
+              { name: 'description', content: 'At Union Repair Pro, Our services range from iPhone Glass Repair, Samsung Galaxy S8 LCD replacement to complex motherboard repairs.' },
               { name: 'author', content: 'Gang Zhao, Union Repair Pro'},
             ]
           },
@@ -50,7 +50,7 @@ import MyAddress from '@/components/Address.vue'
         questions: [
           {
             q: 'What we have to offer?',
-            a: 'At Union Repair Pro, we strive to achieve the highest quality and comprehensive service for our customers. Our services range from simple LCD replacement to complex motherboard repairs. All of this is due to our careful selection of our suppliers and strict quality control. So we have unparalleled confidence in the quality of the services we can provide. We install and replace all parts on your phone with a one-year warranty (excluding labor costs).'
+            a: 'At Union Repair Pro, we strive to achieve the highest quality and comprehensive service for our customers. Here\' a list of Our services<br><br><h3>Apple iPhone Glass Repair</h3><h3>iPhone Back Glass Repair</h3><h3>Samsung Galaxy S8 LCD replacement</h3><h3><a href="/service/microsoldering">Microsoldering</a></h3><h3>Water Damage Rescure</h3><br>All of this is due to our careful selection of our suppliers and strict quality control. So we have unparalleled confidence in the quality of the services we can provide. We install and replace all parts on your phone with a one-year warranty (excluding labor costs).'
           },
           {
             q: "How long does it take?",

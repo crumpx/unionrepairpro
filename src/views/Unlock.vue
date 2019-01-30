@@ -1,7 +1,7 @@
 <template>
   <div class="">
                <v-responsive>
-      <img style="width: 100%;" v-lazy="banner" alt="">
+      <img style="width: 100%;" v-lazy="banner" alt="Phone Unlock Service, Including Google Lock, Carrier Lock and other unlock services.">
       </v-responsive> 
       <v-container>
         <v-layout>
@@ -36,10 +36,10 @@ import MyAddress from '@/components/Address.vue'
     MyAddress
   },
     metaInfo: {
-      title: 'Data Recovery Serivice',
+      title: 'Phone Unlock Service, Network Unlock Code, Unlocked Mobile Phones',
         meta: [
               { charset: 'utf-8' },
-              { name: 'description', content: 'Data recovery is a technical means to recover files deleted by human or computer failure. Data is precious photos, company reports, email jobs and more.' },
+              { name: 'description', content: 'We provide here in Union Repair Pro fast, reliable ways to make locked phones into unlocked mobile phones, either network unlock code or equipments in our shop.' },
               { name: 'author', content: 'Gang Zhao, Union Repair Pro'},
             ]
           },
@@ -49,7 +49,7 @@ import MyAddress from '@/components/Address.vue'
         questions: [
           {
             q: 'What is carrier lock?',
-            a: "In the United States, most mobile phones are locked unless specifically stated. For example, AT&amp;T's mobile phone cannot be used directly on T-Mobile, and vice versa. We can provide mobile phone unlocking services so that customers can enjoy the freedom they deserve. Under normal circumstances, unless a mobile phone lacks working conditions (different bands) on the hardware, the unlocked mobile phone is no longer limited by the software, so that the customer can switch the operator at will."
+            a: "In the United States, most mobile phones are locked unless specifically stated. For example, AT&amp;T's mobile phone cannot be used directly on T-Mobile, and vice versa. We can provide mobile phone unlocking services through<br><br><h3>Obtaining Network Unlock Code</h3><h3>Unlocking Chip</h3><h3>Special Equipment</h3><br> so that customers can enjoy an <h3 style='display: inline;'>unlocked mobile phones</h3>.  Under normal circumstances, unless a mobile phone lacks working conditions (different bands) on the hardware, the unlocked mobile phone is no longer limited by the software, so that the customer can switch the operator at will."
           },
           {
             q: 'What about forgotten password for my phones?',
@@ -57,7 +57,7 @@ import MyAddress from '@/components/Address.vue'
           },
           {
             q: "How long does it take?",
-            a: "Depending on the model of the phone and the carrier network it is in, unlocking usually takes between 2 hours and 72 hours, and some phones may take longer.",
+            a: "Depending on the model of the phone and the carrier network it is in, unlocking usually takes between 2 hours and 72 hours, and some phones may take longer. Phones require unlock with network unlock code will need approval and might take up 24 hours.",
           },
           {
             q: "Is it worth it?",

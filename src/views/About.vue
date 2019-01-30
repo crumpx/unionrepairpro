@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <v-responsive>
-      <img style="width: 100%;" v-lazy="banner" alt="">
+      <img style="width: 100%;" v-lazy="banner" alt="About Union Repair">
       </v-responsive>  
     
     <v-container fluid >
