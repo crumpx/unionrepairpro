@@ -10,6 +10,7 @@
           <h2 class="my-3 text-xs-center">Repair experts in Kissimmee, FL</h2>
 
           <p style="display: inline;">We are located in Kissimmee, Florida to provide a wide range of service such as 
+            <h3>iPhone battery replace</h3>
             <h3>phone repair</h3>, 
             <h3>laptop repair</h3>, 
             <h3>computer service</h3> and 
@@ -76,7 +77,7 @@
                 </v-btn>
                 <v-btn flat color='grey darken-4' itemprop="email" href="mailto:info@unionrepairpro.com">
                   <v-icon left >fa-envelope</v-icon>
-                  <span>info@unionrepairpro.com</span>
+                  
                 </v-btn>
             </v-card-actions>
           </v-card>
@@ -86,7 +87,7 @@
 
 
 
-        <v-flex xs12 lg6 pa-4>
+        <v-flex xs12 lg12 pa-4>
 
           <Map></Map>
         </v-flex>
@@ -106,10 +107,10 @@ import Map from '@/components/Map'
             Map
           },
     metaInfo: {
-      title: 'Computer|Laptop Repair|Union Repair Pro - Kissimmee, Florida',
+      title: 'Computer|Laptop Repair|iPhone Battery|Phone repair near me',
       meta: [
       { charset: 'utf-8' },
-      { name: 'description', content: 'Phone repair and computer repair, laptop repair in Kissimmee, phone repair near me, fix broken phone screen in 20 minutes. Micro soldering service and more' },
+      { name: 'description', content: 'Phone repair and computer repair, laptop repair in Kissimmee, phone repair near me, fix broken phone screen, iphone battery in 20 minutes. Micro soldering service and more' },
       { name: 'author', content: 'Gang Zhao, Union Repair Pro'},
        { name: 'msvalidate.01', content: '1DF766012DA50373A5C327F8ABDEEE40'},
 

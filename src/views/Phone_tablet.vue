@@ -38,10 +38,10 @@ import MyAddress from '@/components/Address.vue'
     MyAddress
   },
           metaInfo: {
-            title: 'Cellphone and tablet repair, iPhone Glass Repair',
+            title: 'Cellphone and Tablet Repair, iPhone Glass, iPhone Battery Repair',
             meta: [
               { charset: 'utf-8' },
-              { name: 'description', content: 'At Union Repair Pro, Our services range from iPhone Glass Repair, Samsung Galaxy S8 LCD replacement to complex motherboard repairs.' },
+              { name: 'description', content: 'At Union Repair Pro, Our services range from iPhone Glass Repair,iPhone Battery, Samsung Galaxy S8 LCD replacement to complex motherboard repairs.' },
               { name: 'author', content: 'Gang Zhao, Union Repair Pro'},
             ]
           },
@@ -54,7 +54,7 @@ import MyAddress from '@/components/Address.vue'
           },
           {
             q: "How long does it take?",
-            a: "In general, repairs that require replacement parts can be completed in as little as 20 minutes, such as replacing the iPhone's battery. Of course, there are some complicated models that may take more time, but we will deliver them to the customer's hands after repairing and testing them as much as possible while maintaining the quality of the repairs.",
+            a: "In general, repairs that require replacement parts can be completed in as little as 20 minutes, such as replacing the iPhone battery. Of course, there are some complicated models that may take more time, but we will deliver them to the customer's hands after repairing and testing them as much as possible while maintaining the quality of the repairs.",
           },
           {
             q: "How much does it cost, and is it worth it?",

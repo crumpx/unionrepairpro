@@ -22,7 +22,7 @@
                 </v-btn>
                 <v-btn flat color='grey darken-4' itemprop="email" href="mailto:info@unionrepairpro.com">
                   <v-icon left >fa-envelope</v-icon>
-                  <span>info@unionrepairpro.com</span>
+                  <!-- <span>info@unionrepairpro.com</span> -->
                 </v-btn>
             </v-card-actions>
           </v-card>
