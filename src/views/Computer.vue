@@ -3,28 +3,25 @@
       <v-responsive>
       <img style="width: 100%;" v-lazy="banner" alt="Computer Repair Services, virus removal, data recovery, networking and more...">
       </v-responsive> 
+
+ 
+      <v-container>
+          <h1 class="text-xs-center display-3">Computer Service</h1>
+          <v-layout xs12  row wrap align-center>
+            <v-flex pa-2 xs12 md8 offset-md2>
+              <v-card  v-for="(item, index) in questions" :key='index'>
+                <v-card-title class="title grey--text">{{item.q}}</v-card-title>
+                <v-card-text v-html="item.a">
+                </v-card-text>
+              </v-card>
+            </v-flex>
+          </v-layout>         
+      </v-container>
  <v-container>
         <v-layout>
           <MyAddress></MyAddress>
         </v-layout>      
 </v-container>
- 
-      <v-container>
-          <h1 class="text-xs-center display-3">Computer Service</h1>
-          <v-layout xs12  row wrap align-center>
-            <v-flex pa-2 xs12 sm6 v-for="(item, index) in questions" :key='index'>
-              <v-card flat>
-                <v-card-title class="title grey--text">{{item.q}}</v-card-title>
-                <v-card-text v-html="item.a">
-
-                </v-card-text>
-              </v-card>
-            </v-flex>
-          </v-layout>
-
-          
-      </v-container>
-
   </div>
 </template>
 
@@ -55,6 +52,10 @@ import MyAddress from '@/components/Address.vue'
           {
             q: "How long does it take?",
             a: "There is no certain time. But generally, it is more than two hours. Prices are also plausible due to the nature of the problem. However, checking and reporting problems is provided free of charge, and customers can consider whether they want to perform repairs.",
+          },
+          {
+            q: "I forgot my login password for my computer/My Mac asks for a code that I didn't set up...",
+            a: "We can remove these passwords. Windows passowrd, Macbook's EFI lock, Macbook's iCloud lock, and more.<br />For your forgotten phone password, see <a href='/service/accountunlock'>Account Unlocking</a>",
           },
           {
             q: "Is it worth it?",

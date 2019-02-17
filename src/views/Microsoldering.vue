@@ -4,14 +4,10 @@
       <img style="width: 100%;" v-lazy="banner" alt="Microsoldering Service is highly precious operation done on electronics.">
       </v-responsive>  
       <v-container>
-        <v-layout>
-          <MyAddress></MyAddress>
-        </v-layout>      
-
-          <h1 class="text-xs-center display-3">Micro-soldering Service</h1>
+            <h1 class="text-xs-center display-3">Micro-soldering Service</h1>
           <v-layout xs12  row wrap align-center>
-            <v-flex pa-2 xs12 sm6 v-for="(item,index) in questions" :key='index'>
-              <v-card>
+            <v-flex pa-2 xs12 md8 offset-md2>
+              <v-card v-for="(item,index) in questions" :key='index'>
                 <v-card-title class="title grey--text">{{item.q}}</v-card-title>
                 <v-card-text v-html="item.a">
 
@@ -20,7 +16,11 @@
             </v-flex>
           </v-layout>
       </v-container>
-    
+      <v-container>
+            <v-layout>
+          <MyAddress></MyAddress>
+        </v-layout>
+        </v-container>    
   </div>
 </template>
 

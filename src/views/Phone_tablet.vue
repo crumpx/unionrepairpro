@@ -3,28 +3,31 @@
 
              <v-responsive>
 <img style="width: 100%;" v-lazy="banner" alt="Phone and Tablet Repair Service, fix nearly any problems.">
-      </v-responsive> 
-          <v-container>
-        <v-layout>
-          <MyAddress></MyAddress>
-        </v-layout>
- </v-container>
+
 
   <v-container>
           <h1 class="text-xs-center display-3">Phone and Tablet Service</h1>
           <v-layout xs12  row wrap align-center>
-            <v-flex pa-2 xs12 sm6 v-for="(item, index) in questions" :key='index'>
+            <v-flex pa-2 xs12 md8 offset-md2>
               <v-card>
+                <div v-for="(item, index) in questions" :key='index'>
                 <v-card-title class="title grey--text">{{item.q}}</v-card-title>
                 <v-card-text v-html='item.a'>
 
                 </v-card-text>
+                </div>
+
               </v-card>
             </v-flex>
           </v-layout>
       </v-container>
     
- 
+       </v-responsive> 
+          <v-container>
+        <v-layout>
+          <MyAddress></MyAddress>
+        </v-layout>
+ </v-container>
 
 
   </div>
